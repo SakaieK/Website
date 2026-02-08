@@ -1,0 +1,144 @@
+:root {
+    --bg: #000000;
+    --text: #ffffff;
+
+    /* colors */
+    --heading: #80ff80;
+    --title: #0080ff;
+    --link-blue: #66ffff;
+    --link-red: #ff3333;
+}
+
+/* Global reset */
+body {
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 2.5rem 3rem;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 11pt;
+    /* standard text */
+    line-height: 1.6;
+}
+
+/* Title block */
+.title-block {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title-block h1 {
+    font-family: "Times New Roman", Times, serif;
+    color: var(--title);
+    font-size: 23pt;
+    /* page title */
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+/* Metadata / subtitle text */
+.meta {
+    font-family: "Times New Roman", Times, serif;
+    color: var(--heading);
+    font-size: 11pt;
+}
+
+/* Start link */
+.start a {
+    font-family: "Times New Roman", Times, serif;
+    color: var(--link-blue);
+    font-size: 11pt;
+    text-decoration: underline;
+}
+
+/* Subheadings */
+h2,
+h3 {
+    font-family: "Times New Roman", Times, serif;
+    color: var(--heading);
+    font-size: 17pt;
+    /* subheadings */
+    font-weight: normal;
+    margin-top: 2rem;
+}
+
+/* TOC */
+.toc-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toc-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Lists of projects */
+.project-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.project-list li {
+    margin-bottom: 0.4rem;
+}
+
+/* Links */
+a {
+    text-decoration: underline;
+    font-size: 11pt;
+}
+
+a.blue {
+    color: var(--link-blue);
+}
+
+a.red {
+    color: var(--link-red);
+}
+
+/* Divider */
+hr {
+    border: none;
+    border-top: 1px solid var(--heading);
+    margin: 2.5rem 0;
+}
+
+/* Paragraphs */
+p {
+    margin: 1rem 0;
+}
+
+
+.centered-heading {
+    text-align: center;
+    /* center the heading text */
+    display: block;
+    /* ensure heading is block-level */
+    margin-left: auto;
+    /* center block horizontally */
+    margin-right: auto;
+    max-width: 100%;
+    /* override p max-width */
+}
+
+.site-logo {
+    display: block;
+    margin: 0 auto 1rem auto;
+    max-width: 140px;
+    /* adjust as needed */
+    height: auto;
+}
+
+.project-image {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+
+    /* visual consistency */
+    border-radius: 10px;
+
+    /* spacing */
+    margin: 1.8rem auto;
+}
